@@ -31,6 +31,23 @@ for(i in poor){
 console.log(poor);
 
 
+var ageGroup={};
+
+for(i in Emp){
+	if(ageGroup.hasOwnProperty(Emp[i].age))
+	{
+		ageGroup[Emp[i].age].push(Emp[i]);
+	}else{
+		ageGroup[Emp[i].age]=[];
+		ageGroup[Emp[i].age].push(Emp[i]);
+	}
+}
+
+console.log(ageGroup);
+
+
+
+
 </script>
 
 </body>
