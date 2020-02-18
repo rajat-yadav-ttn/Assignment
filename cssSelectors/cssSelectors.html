@@ -28,7 +28,7 @@
         background:pink;   
     }
 
-    .background p{
+    .background p{ /* all p inside .background*/
         background: url('download.jpeg') fixed no-repeat;
         background-size:cover;
         padding:2%;
@@ -36,7 +36,7 @@
         background-position:center;
     }
 
-    .pseudo li:first-child{
+    .pseudo li:first-child{ /* fist child which is li in .pseudo*/
         color: red;  
     }
 
@@ -45,39 +45,39 @@
         text-decoration: underline;
     }
 
-    .pseudo li:nth-child(3)::after{
+    .pseudo li:nth-child(3)::after{ 
         content:'<---After';
         font-weight: bold;
     }
 
-    .pseudo li:nth-last-child(2){
+    .pseudo li:nth-last-child(2){ /* second last*/
         color:brown;
         font-size:1.3em;
         list-style-type: none;
     }
 
-    .pseudo li:last-child{
+    .pseudo li:last-child{ /*selects li which is last*/
         font-family:'Lacquer',sans-serif;
         font-size:1.5em;
     }
 
-    .combinators + p{
+    .combinators + p{  /* on p just after .combinators*/
         font-size:1.4em;
     }
 
-    .combinators > p{
+    .combinators > p{ /* on p whose parent is .combinators*/ 
         color:red;
     }
 
-    .combinators p{
+    .combinators p{ /* on all p inside .combinators*/
         font-weight: bold;
     }
 
-    .combinators~p{
+    .combinators~p{  /* on p preceded by .combinators */
         font-family:'Lacquer',sans-serif;
     }
 
-    input[type="text"]{
+    input[type="text"]{ /*selects input with text attribute*/
         width:30%;
         height:35px;
         font-size:1.2em;
