@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <title>CSS Selectors</title>
+    <style>
+        
+    .font p:first-child{
+        font-family:'Lacquer',sans-serif;
+        font-size:1.4em;
+        font-weight:bold;
+    }
+
+    .font p:last-child{
+        font:italic 1.2em/40px Lacquer, sans-serif;
+    }
+
+    .font p:nth-last-child(2){
+        color:blue;
+        text-align:center;
+    }
+
+    .font p:nth-child(2){
+        font-size:1.1em;
+        color:teal;
+        background:pink;   
+    }
+
+    .background p{
+        background: url('download.jpeg') fixed no-repeat;
+        background-size:cover;
+        padding:2%;
+        font-size:1.2em;
+        background-position:center;
+    }
+
+    .pseudo li:first-child{
+        color: red;  
+    }
+
+    .pseudo li:nth-child(2)::before{
+        content: 'Before--->';
+        text-decoration: underline;
+    }
+
+    .pseudo li:nth-child(3)::after{
+        content:'<---After';
+        font-weight: bold;
+    }
+
+    .pseudo li:nth-last-child(2){
+        color:brown;
+        font-size:1.3em;
+        list-style-type: none;
+    }
+
+    .pseudo li:last-child{
+        font-family:'Lacquer',sans-serif;
+        font-size:1.5em;
+    }
+
+    .combinators + p{
+        font-size:1.4em;
+    }
+
+    .combinators > p{
+        color:red;
+    }
+
+    .combinators p{
+        font-weight: bold;
+    }
+
+    .combinators~p{
+        font-family:'Lacquer',sans-serif;
+    }
+
+    input[type="text"]{
+        width:30%;
+        height:35px;
+        font-size:1.2em;
+        border-radius:20px;
+        border:1px solid #000;
+        padding-left:20px;
+    }
+
+    input[type="text"]:focus{
+        outline: none;
+    }
+
+    </style>
+</head>
+<body>
+        <h1>Font Properties</h1>
+    <div class="font">dignissimos itaque in perspiciatis libero.
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores facere unde temporibus nam, repellendus laudantium in omnis totam illum, a quam dicta quas iusto similiq
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni harum fugiat necessitatibus, ipsa quasi vitae reiciendis doloribus nostrum voluptatum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis error aperiam veritatis! Est quas officiis id maxime quaerat nemo!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis laboriosam deleniti illum laudantium dolor ducimus tempora quis debitis commodi dolorem fugit, nam, saepe ex, minima dignissimos itaque in perspiciatis libero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores facere unde temporibus nam, repellendus laudantium in omnis totam illum, a quam dicta quas iusto similique. Distinctio aliquid facilis officiis itaque?</p>
+    </div>
+
+        <h1>Background Properties</h1>
+    <div class="background">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni harum fugiat necessitatibus, ipsa quasi vitae reiciendis doloribus nostrum voluptatum.</p>
+    </div>
+
+        <h1>Pseudo class</h1>
+    <div class="pseudo">
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ul>
+    </div>
+
+        <h1>Combinators</h1>
+    <div class="combinators">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, inventore?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, dicta!</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, inventore?</p>
+    </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, inventore?</p> 
+
+    <div class="attribut-selector">
+        <h1>Attribute Selector</h1>
+        <input type="text" placeholder="Enter"> 
+    </div>
+</body>
+</html>
