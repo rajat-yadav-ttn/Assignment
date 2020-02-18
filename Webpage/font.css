@@ -1,0 +1,18 @@
+@font-face{
+	font-family:'FSM-B';
+	src:url('fonts/FSM-B.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-M';
+	src:url('fonts/FSM-M.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-R';
+	src:url('fonts/FSM-R.otf') format('opentype');
+}
+
+*{
+	font-family:'FSM-R';
+}
