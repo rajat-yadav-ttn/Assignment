@@ -197,6 +197,12 @@ tr:hover{
 }
 
 
+@media screen and (max-width:800px){
+	.sec_two{
+		flex-direction:column;
+	}
+}
+
 
 @media screen and (max-width:600px){
 	.img_list{
