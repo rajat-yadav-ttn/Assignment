@@ -72,6 +72,10 @@ input:focus{
 	padding:6px 12px;
 	border-radius:3px;
 }
+.menu_btn:hover{
+	cursor: pointer;
+	background: #4fa78b;
+}
 
 .menu_btn div{
   width:15px;
