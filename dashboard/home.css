@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Open Sans',sans-serif;
+}
+
+body{
+	background: #f3f3f3;
+}
+
+
+
+aside{
+	width:17%;
+	float:left;
+	background:#2f4051;
+	height:100vh;
+	
+}
+
+main{
+	width:83%;
+	float:right;
+}
+
+nav{
+	position: fixed;
+	width:80%;
+	background:#f3f3f3;
+	padding:10px 10px;
+	border-bottom:1px solid #e8e9eb;
+}
+
+nav ul{
+	float:right;
+	margin-top:10px;
+}
+
+nav ul li{
+	display: inline;
+	margin-right:30px;
+}
+
+.nav_left{
+	float:left;
+}
+
+nav input{
+	height:40px;
+	width:300px;
+	border:none;
+	background:transparent;
+	font-size:1rem;
+	margin-left:10px;
+}
+
+input::placeholder{
+	color:#aeaeae;
+}
+
+input:focus{
+	outline: none;
+}
+
+
+.menu_btn{
+	background: #56b496;
+	border:none;
+	padding:6px 12px;
+	border-radius:3px;
+}
+
+.menu_btn div{
+  width:15px;
+  height:2px;
+  background-color:#fff;
+  margin: 3px 0;
+}
+
+ul li:first-child i{
+	color:#676a6d;
+}
+
+ul li i{
+	color:#999c9d;
+	font-size:18px !important;
+}
+
+.dash_head{
+	background:#fff;
+	margin-top:60px;
+	padding:25px 30px;
+	border:1px solid #e8e9eb;
+	color:#6e7e8b;
+}
+
+.dash_head div{
+	margin-top:10px;
+	color:#6e7e8b;
+}
+
+section{
+	margin:0 auto;
+	width:93%;
+	margin-top:30px;
+}
+
+.profile{
+	width:62%;
+	float:left;
+	background:#fefefe;
+	border-top:2px solid #e8eaed;
+	padding:40px 4%;
+	color:#696c6d;
+}
+
+.progress_bar{
+	width:80%;
+	height:7px;
+	background:#f4f4f4; 
+	margin-left:-10px;
+	margin-top:20px;
+	border-radius:30px;
+}
+
+.progress{
+	width:80%;
+	background:#56b496;
+	height: inherit;
+	border-radius:30px;
+}
+
+
+.stake{
+	width:35%;
+	float:right;
+	margin-left:10px;
+	background:#fefefe;
+	border-top:2px solid #e8eaed;
+	padding-bottom:8%;
+}
+
+.heading{
+	font-size:1.3rem;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.prof_pic{
+	width:45%;
+	float:left;
+}
+
+.det{
+	width:55%;
+	float:right;
+}	
+
+.img_wrap img{
+	width:55%;
+	border-radius:50%;
+}
+
+.contact{
+	margin-top:15px;
+	margin-left:8px;
+}
+
+
+.contact span{
+	border:1px solid #ddd;
+	font-size:0.8em;
+	padding:2px 5px;
+	margin:0;
+}
+
+.prof_status{
+	font-size:0.9rem;
+	text-align: center;
+	margin-left:-80px;	
+	margin-top:20px;
+	font-weight:bold;
+}
+
+.name{
+	font-size:1.8rem;
+}
+
+.desig{
+	font-size:1.3rem;
+}
+
+.det_opts{
+}
+
+.exp{
+	float:right;
+	font-size:0.7rem;
+	font-weight: bold;
+	margin-top:-25px;
+	background:#e7eaed;
+	padding:5px 10px;
+	border-radius:20px;
+}
+
+ul.det_opts{
+	list-style-type: none;
+	margin-top:30px;
+}	
+
+ul.det_opts li{
+	margin-top:15px;
+	font-size:0.9rem;
+}
+
+.icons{
+	float:right;
+	margin-bottom:-30px;
+	margin-right:-20px;
+}
+
+.icons i{
+	background:#e6e9ec;
+	padding:10px;
+	border-radius: 30px;
+	width:40px;
+	font-size:17px;
+	height:40px;
+	text-align: center;
+}
+
+.stake_list li{
+	list-style-type:none;
+	clear:both;
+	border-top:1px solid #ddd;
+	padding-top:10px;
+	margin-bottom:20px;
+}
+
+
+.stake_img{
+	float:left;
+	width:25%;
+}
+
+.stake img{
+	width:100%;
+	border-radius:50%;
+
+}
+
+.stake_list{
+	margin:0 auto;
+	width:80%;
+	margin-top:20px;
+}
+
+
+.stake_det{
+	float:right;
+	width:70%;	
+}
+
+.stake_det a{
+	font-size:1.1rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.stake_desig{
+	font-size:0.8rem;
+}
+
+.prof_img_wrap img{
+	width:30%;
+	border-radius:50%;
+	min-width:50px;
+}
+
+.user_name{
+	color:#fff;
+	font-weight: bold;
+	margin-left:-5px;
+}
+
+.prof_sec{
+	padding:40px 30px;
+	background:#233646;
+}
+
+
+.aside_list{
+	width:100%;
+}
+
+ul.aside_list{
+	list-style-type: none;
+}
+
+.aside_list li{
+	padding:15px 10%;
+	width:100%;
+	margin:0 auto;
+	/*margin-top:20px;*/
+	font-size:0.8rem;
+	color:#8599ac;
+	font-weight: bold;
+ }
+
+.aside_list a{
+	color:#8599ac;
+	text-decoration:none;
+}
+
+.aside_list li:hover{
+	background:#293845;
+}
+
+
+
+.aside_list li i{
+	color:#8599ac;
+	font-size:20px !important;
+	margin-right:10px;
+}
+
+@media screen and (max-width:700px){
+	.profile{
+		width:100%;
+	}
+
+	.stake{
+		width:100%;
+		margin-top:20px;
+	}
+
+	.prof_pic{
+		width:100%;
+		text-align: center;
+	}
+
+	.det{
+		width:100%;
+		margin-top:40px;
+	}
+
+	.contact{
+		text-align: center;
+	}
+
+	.progress_bar{
+		margin:0 auto;
+		margin-top:20px;
+	}
+
+	.prof_status{
+		margin-left:0px;
+	}
+
+
+
+	aside{
+		height:inherit;	
+	}
+
+	.wrap{
+		display: flex;
+		align-items: stretch;
+	}
+
+	.prof_sec{
+		padding-left:20px;
+		text-align:center;
+	}
+
+	.icons{
+		margin-right:10px;
+	}
+
+}
