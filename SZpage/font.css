@@ -1,0 +1,28 @@
+@font-face{
+	font-family:'FSM-B';
+	src:url('fonts/FSM-B.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-M';
+	src:url('fonts/FSM-M.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-R';
+	src:url('fonts/FSM-R.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-L';
+	src:url('fonts/FSM-L.otf') format('opentype');
+}
+
+@font-face{
+	font-family:'FSM-T';
+	src:url('fonts/FSM-T.otf') format('opentype');
+}
+
+*{
+	font-family:'FSM-R',Arial;
+}
