@@ -286,3 +286,53 @@ body{
 .orange{
 	background:#ef7f44;
 }
+
+@media screen and (max-width:720px){
+	.container{
+		width:60%;
+		margin:0 auto;
+		margin-top:-20px;
+	}
+
+	.container .box{
+		width:100%;
+		margin:0 auto;
+	}
+
+	.btns_wrap button:last-child{
+		margin-left:0px;
+		margin-top:10px;
+	}
+
+	.middle_list{
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.contact_list{
+		float:left;
+	}
+
+	.contact_list li{
+		margin-left:30px; 
+	}
+
+
+}
+
+
+@media screen and (max-width:500px){
+	.contact_list li:not(:first-child){
+		margin-top:20px;
+	}
+
+	.contact_list li{
+		margin-left:0px;
+	}
+
+
+	.container{
+		width:90%;
+	}
+}
+
