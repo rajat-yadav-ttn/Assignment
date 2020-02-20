@@ -243,12 +243,11 @@ body{
 }
 
 .container{
-	background: red;
 	width:80%;
 	margin:0 auto;
 	margin-top:-60px;
 	position: relative;
-	z-index:2;
+	z-index:1;
 }
 
 .container h3{
@@ -263,6 +262,7 @@ body{
 	float:left;
 	width:25%;
 	color:#fff;
+
 }
 
 .box i{
