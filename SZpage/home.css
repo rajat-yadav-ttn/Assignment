@@ -248,7 +248,10 @@ body{
 	margin-top:-60px;
 	position: relative;
 	z-index:1;
+
 }
+
+
 
 .container h3{
 	margin:0;
@@ -291,7 +294,7 @@ body{
 	.container{
 		width:60%;
 		margin:0 auto;
-		margin-top:-20px;
+		margin-top:0px;
 	}
 
 	.container .box{
