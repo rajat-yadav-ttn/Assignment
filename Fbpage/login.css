@@ -1,0 +1,220 @@
+@font-face{
+	font-family:'HR';
+	src:url('Helvetica-R.ttf') format('truetype');
+}
+
+body{
+	margin:0;
+	padding:0;
+	background:linear-gradient(90deg , #fff,#d6daea);
+}
+
+*{
+	font-family:'HR';
+}
+
+nav{
+	background: #3c5998;
+	padding:30px 5% 10px 5%;
+}
+
+nav h1{
+	font-size:2.7em;
+	margin:0;
+	/*float:left;*/
+	display: inline-block;
+	color:#fff;
+	margin-left:30px;
+	margin-top:5px;
+}
+
+
+
+
+.login_form{
+	float:right;
+	margin-top:-10px;
+
+}
+
+.login_form label{
+	color:#fff;
+	font-size:0.8em;
+}
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.input_wrap{
+	float:left;
+}
+
+.input_wrap input{
+	display: block;
+	margin-right: 20px;
+	height:21px;
+	border:1px solid #000;
+	width:90%;
+}
+
+.login_form input[type="submit"]{
+	background: #4268b3;
+	color:#fff;
+	font-weight: bold;
+	font-size:0.9em;
+	padding:5px 10px;
+	border:0.5px solid rgba(0,0,0,0.3);
+	margin-top:15px;
+	margin-right:100px;
+}
+
+.login_form input[type="submit"]:hover{
+	background:#3c5998;
+	cursor:pointer;
+	transition: 0.3s ease;
+}
+
+.login_form .input_wrap a{
+	font-size:0.8em;	
+	color:rgba(255,255,255,0.6);
+	text-decoration: none;
+	display: block;
+	margin-top:8px;
+}
+
+
+.img_left{
+	float:left;
+	width:50%;
+}
+
+
+.large_txt{
+	font-size:2em;
+	color:#323232;
+	margin-bottom:15px;
+}
+
+.small_txt{
+	font-size:1.3em;
+	color:#323232;
+}
+
+.sign_wrap{
+	width:40%;
+	margin-right:10%;
+	float:right;
+}
+
+.sign_form input[type="password"] , .sign_form input[type="text"] {
+	height:38px;
+	width:42%;
+	font-size:1.1em;
+	margin-top:10px;
+	border-radius:8px;
+	border:1px solid #c1c5cd;
+	padding-left:8px;
+}
+
+.sign_wrap input::placeholder{
+	color:#aba8ab;
+}
+
+.sign_form{
+	margin-top:10px;
+}
+
+.heading{
+	font-size:1.2em;
+	font-weight: bold;
+	color:#9798a3;
+	margin-top:20px;
+}
+
+select{
+	margin-left:-5px;
+	margin-top:10px;
+	padding-left:5px;
+	width:13%;
+	height:30px;
+	background:#fff;
+}
+
+.radio{
+	margin-top:20px;
+}
+
+.select_ques{
+	color:#60676f;
+	font-size:1.5em !important;
+	margin-top:12px;
+	vertical-align:top;
+}
+
+.radio label{
+	font-size:1.2em;
+	color:#292a36;
+}
+
+.radio_ques{
+	color:#60676f;
+	font-size:1.3em !important;
+	margin-left:15px;
+	vertical-align:top;
+}
+
+.tnc{
+	font-size:0.7em;
+	width:60%;
+	color:#777;
+	margin-top:20px;
+}
+
+.sign_form input[type="submit"]{
+	background: linear-gradient(#66aa54, #598e47);
+	font-size:1.3em;
+	border:1px solid rgba(0,0,0,0.5);
+	border-radius:5px;
+	padding:10px 60px;
+	font-weight: bold;
+	margin-top:20px;
+	color:#fff;
+}
+
+.sign_form input[type="submit"]:hover{
+	cursor: pointer;
+	opacity:0.9;
+	transition: 0.3s ease;
+}
+
+.line{
+	font-weight: bold;
+	font-size:1.4em;
+	color:#1c3051;
+}
+
+.img_left img{
+	width:100%;
+	margin-top:30px;
+}
+
+
+.left_area_wrap{
+	width:80%;
+	margin:0 auto;
+	margin-top:10%;
+}
+
+@media screen and (max-width:768px){
+	.img_left{
+		width:100%;
+	}
+
+	.sign_wrap{
+		width: 100%;
+		margin-right:-30px;
+	}
+}
