@@ -280,6 +280,7 @@ section h3{
 	.travel,.gallery{
 		width:100%;
 		padding:0;
+		margin:0;
 		border:none;
 		margin-top:50px;
 	}
