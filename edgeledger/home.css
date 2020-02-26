@@ -347,5 +347,10 @@ footer{
 		flex-direction: column;
 	}
 
+	.work_item{
+		display:flex;
+		flex-direction: column;
+	}
+
 }
 
