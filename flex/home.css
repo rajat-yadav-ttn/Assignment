@@ -74,16 +74,39 @@ header{
 }
 
 .lang_dropdown{
-	
+	position: absolute;
+	display: none;
+	top:45px;
 }
 
-.lang_dropdown ul{
+.lang_list{
 	list-style-type:none;
 	background: rgba(255,255,255,0.8);
 	color:#000;
 }
 
 
+.lang_list a{
+	color:#000;
+	text-decoration:none;
+}
+
+.lang_select:hover + .lang_dropdown{
+	display: block;
+}
+
+.lang_dropdown:hover{
+	display: block;
+}
+
+.lang_list li{
+	padding:5px 10px;
+	border-bottom:1px solid rgba(0,0,0,0.5);
+}
+
+.lang_list li:hover{
+	background:rgba(0,0,0,0.2);
+}
 
 .tagline div{
 	font-size:0.6rem;
@@ -121,6 +144,77 @@ header{
 	font-size:0.6rem;
 	margin-left:5px;
 }
+
+
+.user_dropdown{
+	position: absolute;
+	display: none;
+	top:30px;
+	left:-40px;
+}
+
+.user_list{
+	list-style-type:none;
+	background: rgba(255,255,255,0.8);
+	color:#000;
+}
+
+
+.user_list a{
+	color:#000;
+	text-decoration:none;
+	padding:0px 15px;
+	text-align: center;
+}
+
+	
+
+.user_list li:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+.user_menu:hover + .user_dropdown{
+	display: block;
+}
+
+.user_dropdown:hover{
+	display: block;
+}
+
+
+.side_menu{
+	position:fixed;
+	right:0;
+	width:50%;
+	background: #ef823c;
+	top:55px;
+	height:100vh;
+	padding:0px 20px;
+	display: none;
+	z-index: 2;
+}
+
+.side_menu ul li{
+	list-style-type: none;
+	color:#fff;
+	padding:15px 0px;
+	font-size:1.2rem;
+}
+
+.menu_btn:hover + .side_menu{
+	display: block;
+} 
+
+.side_menu:hover{
+	display: block;
+}
+
+
+.side_menu ul li:not(:last-child){
+	border-bottom:1px solid rgba(255,255,255,0.5);
+}
+
+
 
 
 .sec_one{

@@ -1,5 +1,5 @@
 @media(max-width:768px){
-	.nav_right a{
+	.nav_right>a , .prof_opt{
 		display: none;
 	}
 	
