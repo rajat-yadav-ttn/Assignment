@@ -220,6 +220,10 @@ header{
 	color:#f39b3b;
 }
 
+.play_icon:hover{
+	cursor:pointer;
+}
+
 .play_wrap{
 	font-size:1.2rem;
 	font-weight: bold;
@@ -281,7 +285,11 @@ header{
 .thumb_overlay{
 	height: 100%;
 	width:100%;
-	background:rgba(255,255,255,0.5);
+	background:rgba(255,255,255,1);
+}
+
+.thumb_overlay img:not(.active){
+	opacity: 0.5;
 }
 
 .thumb_wrap img{
