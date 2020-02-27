@@ -574,11 +574,12 @@ header{
 
 textarea{
 	width:100%;
-	border-radius:5px;
-	border:1px solid #dfe0e2;
 	margin-top:5px;
 	font-size:1.1rem;
 	resize: none;
+	border:none;
+	border-radius:8px;
+	border:1px solid #dfe0e2;
 }
 
 .word_lmt{
