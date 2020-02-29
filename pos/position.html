@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nested tags with position assignment</title>
+	<style>
+		.red{
+			position: relative;
+			background:red;
+			width:50%;
+			height:400px;
+		}
+		.blue{
+			position:relative;
+			top:50px;
+			left:50px;
+			background:blue;
+			width:50%;
+			height:300px;
+		}
+		.orange{
+			position: relative;
+			background:orange;
+			top:30px;
+			left:30px;
+			width:50%;
+			height:200px;
+		}
+		.pink{
+			position: absolute;
+			left:10px;
+			top:10px;
+			background:pink;
+			width:50%;
+			height:100px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="red">
+		<div class="blue">
+			<div class="orange">
+			</div>
+			<div class="pink">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
