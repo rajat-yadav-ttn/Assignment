@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock</title>
+	<style>
+
+		@import url('https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap');
+
+		*{
+			margin:0;
+			padding:0;
+			font-family: 'Cabin';
+		}
+
+		body{
+			background:#2c87c5;
+		}
+
+		.container{
+			text-align: center;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-60%);
+			font-size:5rem;
+			color:#fff;
+		}
+
+		#greet{
+			font-size:2.5rem;
+			border-bottom:1px solid rgba(255,255,255,0.5);
+			padding-bottom:60px;
+		}
+
+		#time{
+			margin-top:30px;
+			font-weight:700;
+		}
+
+		#date{
+			font-size:2.5rem;
+			margin-top:30px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div id="greet">
+		Good <span id="tod"></span>
+	</div>
+
+	<div id="time"></div>
+	
+	<div id="date"></div>
+</div>
+
+
+<script>
+	(function clock(){
+			var greet;
+			var d=new Date();
+			var h=d.getHours();
+			var ah=h;
+			h=h>12?((h-12)<10?'0'+(h-12):(h-12)):h;
+			h=h==0?12:h;
+			var m=d.getMinutes();
+			m=m<10?'0'+m:m;
+			var s=d.getSeconds();
+			s=s<10?'0'+s:s;
+			setTimeout(clock,1000);
+			var meridian=ah>=12?'pm':'am';
+
+			if(ah>5 && ah<12){
+				greet='Morning';
+			}else if(12<=ah && ah<17){
+				greet='Afternnon'
+			}else if(ah>=17 && ah<21){
+				greet='Evening';
+			}else{
+				greet='Night';
+			}
+
+
+			var t_date=d.getDate();
+			var month=d.getMonth();
+			var year=d.getFullYear();
+
+			var mon_arr=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+			document.getElementById('tod').innerText=greet;
+			document.getElementById("time").innerText=h+':'+m+':'+s + ' ' + meridian;
+			document.getElementById("date").innerText=t_date+' '+mon_arr[month]+' '+year;
+		})();
+
+
+</script>
+
+</body>
+</html>
