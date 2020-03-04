@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+Q6. Create a counter using closures.<br>
+Ans.->in console
+<br><br>
+Q1. Create a hierarchy of person, employee and developers. <br>
+Ans.->in console
+
+<script>
+
+
+function Person(name,age){
+	this.name=name;
+	this.age=age;
+}
+
+function Emp(id,name,age){
+	Person.call(this,name,age);
+	this.id=id;
+}
+
+function Dev(comp,id,name,age){
+	Emp.call(this,id,name,age);
+	this.comp=comp;
+}
+
+var Developers=new Dev('FEEN',1,'A',20);
+
+console.log(Developers);
+
+//q6
+var counter=(function(){
+	var c=0;
+	return function(){
+		return c++;
+	}
+})();
+
+counter();
+counter();
+counter();
+
+console.log(counter());
+
+
+
+</script>
+
+</body>
+</html>
