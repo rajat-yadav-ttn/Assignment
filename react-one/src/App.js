@@ -8,26 +8,11 @@ export default class App extends Component {
       fruitObj:{
         name:'',
         key:''
-      }
+      },
+      editMode:0,
     }
    
 
-
-  addFruit=(event)=>{
-    event.preventDefault();
-    const newItem = this.state.fruitObj;
-    console.log(newItem);
-    if(newItem.name !==""){
-      const fruits = [...this.state.fruits, newItem];
-    this.setState({
-      fruits: fruits,
-      fruitObj:{
-        name:'',
-        key:''
-      }
-    })
-    }
-  }
 
   addFruit=(event)=>{
     event.preventDefault();
@@ -38,7 +23,7 @@ export default class App extends Component {
     if(fruitItem.name!==''){
       const fruits=[...this.state.fruits,fruitItem]
       this.setState({fruits:fruits,fruitObj:{name:''}});
-      // console.log(fruits);
+      // console.log(fruits);  
     }
   }
 
@@ -61,6 +46,12 @@ export default class App extends Component {
 
   }
 
+  editHandler=(item,key)=>{
+      this.setState({editMode:1})
+      // console.log(item);
+  }
+
+
 
   render(){
     return (
@@ -70,7 +61,12 @@ export default class App extends Component {
           <input type="text" placeholder="Enter Fruits" value={this.state.fruitObj.name} onChange={this.changeHandler}/>
           <button className="addButton" type="submit">Add</button>
         </form>
-        <Fruit items={this.state.fruits} deleteHandler={this.deleteHandler}/>
+        <Fruit items={this.state.fruits} 
+        editMode={this.state.editMode}
+               deleteHandler={this.deleteHandler} 
+               editHandler={this.editHandler}
+               update={this.update}
+                />
         </div>
       </div>
     );
