@@ -9,7 +9,6 @@ export default class App extends Component {
         name:'',
         key:''
       },
-      editMode:0,
     }
    
 
@@ -46,12 +45,37 @@ export default class App extends Component {
 
   }
 
-  editHandler=(item,key)=>{
-      this.setState({editMode:1})
-      // console.log(item);
+ 
+
+  // update=(item,key)=>{
+  //   console.log(item);
+  //   const fruits=this.state.fruits;
+  //   fruits.map(i=>{
+  //     if(i.key===key){
+  //       console.log(i.key+ " " +key)
+  //       i.name=name;
+  //     }
+  //   })
+  //   this.setState({
+  //     fruits:fruits,
+  //   })
+  // }
+
+  update=(name,key)=>{
+    const fruits = this.state.fruits;
+    fruits.map(item=>{      
+      if(item.key===key){
+        
+        item.name= name;
+      }
+    })
+    this.setState({
+      fruits:fruits,
+    })    
   }
 
 
+  
 
   render(){
     return (
@@ -62,9 +86,7 @@ export default class App extends Component {
           <button className="addButton" type="submit">Add</button>
         </form>
         <Fruit items={this.state.fruits} 
-        editMode={this.state.editMode}
                deleteHandler={this.deleteHandler} 
-               editHandler={this.editHandler}
                update={this.update}
                 />
         </div>

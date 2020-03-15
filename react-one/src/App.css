@@ -22,6 +22,10 @@ input{
   border:1px solid #000;
 }
 
+.name{
+  border:none;
+}
+
 .wrap{
   width:80%;
   margin:auto;
